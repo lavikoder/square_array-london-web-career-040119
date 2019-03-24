@@ -1,9 +1,8 @@
  def square_array(array)
- numbers = [1,2,3]
- numbers.each_with_index { |numbers,arr| arr << numbers ** 2 }
- 
- a = [ "a", "b", "c" ]
-a.each_index {|x| print x, " -- " }
-
-  end
+  arr = []
+  array.each { |i| arr << i ** 2 }
+  arr
 end
+
+my_arr = [1, 2]
+p square_array(my_arr)
